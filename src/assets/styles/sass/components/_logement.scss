@@ -1,0 +1,26 @@
+.logement__info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  .logement__item{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .logement__title{
+    font-weight: 700;
+    font-size: 18px;
+    position: absolute;
+    color: white;
+    padding: 0px 0px 20px 17px;
+    margin: 0;
+    width: 70%;
+  }
+  .logement__cover {
+    width: 100%;
+    height: 255px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+}

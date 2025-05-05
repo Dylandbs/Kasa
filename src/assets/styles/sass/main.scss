@@ -1,0 +1,15 @@
+// main.scss
+
+@import 'base/base';
+
+@import 'components/logo';
+@import 'components/nav-button';
+@import 'components/arrow';
+@import 'components/info-list';
+@import 'components/logement';
+@import 'components/heroBanner';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/error404'; 
