@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header/Header";
 import HeroBanner from "../components/HeroBanner/HeroBanner";
-import Logement from "../components/logement"
+import Logement from "../components/logements"
 import Footer from "../components/Footer/Footer";
 import montagne from "../assets/images/montagne1.jpg";
 import "../assets/styles/sass/main.scss";

@@ -12,3 +12,12 @@
     text-decoration: none;
   }
 }
+
+
+@media screen and (min-width: 900px) {
+  .nav-buttons {
+    a{
+      font-size: 24px;
+    }
+  }
+}

@@ -7,7 +7,6 @@
   gap: 113px;
   color: rgba(255, 96, 96, 1);
   h4 {
-    font-family: Montserrat;
     font-weight: 700;
     font-size: 96px;
     margin: 0;
@@ -15,7 +14,6 @@
     vertical-align: middle;
   }
   p {
-    font-family: Montserrat;
     font-weight: 500;
     font-size: 18px;
     text-align: center;
@@ -26,5 +24,27 @@
     color: black;
     cursor: pointer;
     border-bottom: 1px solid black;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .error404 {
+    margin: 100px 0px 100px 0px;
+    gap: 113px;
+    h4 {
+
+      font-size: 288px;
+    }
+    p {
+      font-weight: 500;
+      font-size: 36px;
+      text-align: center;
+      width: 100%;
+    }
+    a {
+      font-weight: 500;
+      font-size: 18px;
+      border-bottom: 1px solid black;
+    }
   }
 }
