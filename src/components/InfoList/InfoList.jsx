@@ -1,13 +1,24 @@
 import React, { useState } from "react";
 
-function InfoList({ title, content }) {
+function InfoList({ title, contents }) {
   const [visible, setVisible] = useState(false);
 
   const HandleClick = () => setVisible(v => !v);
 
+  const normalContents = () => {
+    if (!contents) return []; 
+    if (Array.isArray(contents)) return contents;
+    return [contents]; 
+  };
+
+  const items = normalContents();
+
   return (
     <div className="info__container">
-      <div className="info__List" onClick={HandleClick}>
+      <div
+        className="info__List" 
+        onClick={handleClick}
+      >
         <h3>{title}</h3>
         <svg
           className={`arrow ${visible ? "visible" : ""}`}
@@ -23,9 +34,13 @@ function InfoList({ title, content }) {
           />
         </svg>
       </div>
-      <div className={`info__text ${visible ? "visible" : ""}`}>
-        {content}
-      </div>
+     {visible && (
+        <div className="info__text">
+          {items.map((content, index) => (
+            <p key={index}>{content}</p>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

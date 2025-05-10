@@ -1,0 +1,26 @@
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  width: 30%;
+  img {
+    border-radius: 50%;
+    object-fit: contain;
+    width: 32px;
+    height: 32px;
+  }
+
+  .user__name {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 0;
+    color: rgba(255, 96, 96, 1);
+    width: 100%;
+    text-align: right;
+  }
+}

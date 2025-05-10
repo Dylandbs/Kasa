@@ -14,21 +14,21 @@ function Apropos() {
         <HeroBanner paysage={montagne} />
         <InfoList
           title="Fiabilité"
-          content="Les annonces postées sur Kasa garantissent 
+          contents="Les annonces postées sur Kasa garantissent 
             une fiabilité totale. Les photos sont conformes aux logements, 
             et toutes les informations sont régulièrement 
             vérifiées par nos équipes."
         />
         <InfoList
           title="Respect"
-          content="La bienveillance fait partie 
+          contents="La bienveillance fait partie 
           des valeurs fondatrices de Kasa. 
           Tout comportement discriminatoire ou de perturbation du voisinage 
           entraînera une exclusion de notre plateforme"
         />
         <InfoList
           title="Service"
-          content="Les annonces postées sur Kasa 
+          contents="Les annonces postées sur Kasa 
           garantissent une fiabilité totale. 
           Les photos sont conformes aux logements, 
           et toutes les informations sont régulièrement 
@@ -36,7 +36,7 @@ function Apropos() {
         />
         <InfoList
           title="Sécurité"
-          content="La sécurité est la priorité de Kasa. 
+          contents="La sécurité est la priorité de Kasa. 
           Aussi bien pour nos hôtes que pour les voyageurs, c
           haque logement correspond aux critères 
           de sécurité établis par nos services. 
