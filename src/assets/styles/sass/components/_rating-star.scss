@@ -1,0 +1,34 @@
+.star-rating {
+  display: flex;
+}
+
+.star-wrapper {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.half-star-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+}
+
+.star-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  fill: transparent;
+
+  &.filled {
+    fill: rgba(255, 96, 96, 1);
+  }
+
+  &.empty {
+    fill: rgba(227, 227, 227, 1);
+  }
+}
+
+

@@ -1,0 +1,33 @@
+.container__gallerie{
+  position: relative;
+  margin-top: 20px;
+  
+  img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 255px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .gallerie__arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    
+    svg{
+      width: 20px; 
+      height: 20px;
+      color: white;
+      padding: 3px; 
+      cursor: pointer;
+    }
+  }
+}

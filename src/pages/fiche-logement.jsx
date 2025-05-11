@@ -5,15 +5,18 @@ import Infologement from "../../public/logement.json";
 import InfoList from "../components/InfoList/InfoList";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import Gallerie from "../components/gallerie/gallerie";
+import StarRating from "../components/ratingStar/ratingStar";
 
 const Fichelogement = () => {
-  const { id } = useParams(); 
+  const { id } = useParams();
   const logement = Infologement.find((item) => item.id === id);
 
   return (
     <div className="app">
       <div className="home">
         <Header />
+        <Gallerie images={logement.pictures} />
         <h3>{logement.title}</h3>
         <p>{logement.location}</p>
         <Tag tags={logement.tags} />
@@ -21,6 +24,7 @@ const Fichelogement = () => {
           <p className="user__name">{logement.host.name}</p>
           <img src={logement.host.picture} alt={logement.host.name} />
         </div>
+        <StarRating rating={logement.rating} />
         <InfoList title="Description" contents={logement.description} />
         <InfoList title="equipments" contents={logement.equipments} />
       </div>

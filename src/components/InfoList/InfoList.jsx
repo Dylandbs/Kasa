@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function InfoList({ title, contents }) {
   const [visible, setVisible] = useState(false);
 
-  const HandleClick = () => setVisible(v => !v);
+  const handleClick = () => setVisible(v => !v);
 
   const normalContents = () => {
     if (!contents) return []; 
