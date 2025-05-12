@@ -1,7 +1,6 @@
 .container__gallerie {
   position: relative;
-  margin-top: 20px;
-
+  margin-top: 1.25rem; 
   img {
     display: flex;
     justify-content: center;
@@ -26,7 +25,7 @@
       width: 20px;
       height: 20px;
       color: white;
-      padding: 3px;
+      padding: 0.1875rem;
       cursor: pointer;
     }
   }

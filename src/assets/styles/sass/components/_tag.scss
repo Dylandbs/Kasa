@@ -7,21 +7,21 @@
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    font-size: 10px;
+    font-size: 0.625rem; 
     color: white;
     background: rgba(255, 96, 96, 1);
-    padding: 2px 25px;
+    padding: 0.125rem 1.5625rem;
     border-radius: 5px;
-    margin: 5px 15px 5px 0px;
+    margin: 0.3125rem 0.9375rem 0.3125rem 0; 
   }
 }
 
 @media screen and (min-width: 900px) {
   .tags__container {
     .tag {
-      font-size: 14px;
+      font-size: 0.875rem; 
       border-radius: 10px;
-      padding: 4px 40px;
+      padding: 0.25rem 2.5rem; 
     }
   }
 }

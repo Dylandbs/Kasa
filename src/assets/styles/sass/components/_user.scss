@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 0.625rem; 
   width: 100%;
   img {
     border-radius: 50%;
@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 0.75rem; 
     margin: 0;
     color: rgba(255, 96, 96, 1);
     width: 30%;
@@ -31,8 +31,8 @@
       height: 64px;
     }
     .user__name {
-      font-size: 18px;
-       width: 40%;
+      font-size: 1.125rem;
+      width: 40%;
     }
   }
 }

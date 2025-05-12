@@ -1,18 +1,18 @@
-.arrow {
-  color: white;
-  cursor: pointer;
-  width: 16px;
-  &cacher {
-    color: black;
-  }
-  &visible {
-    color: blue;
-    width: 46px;
-  }
-}
+// .arrow {
+//   color: white;
+//   cursor: pointer;
+//   width: 16px;
+//   &cacher {
+//     color: black;
+//   }
+//   &visible {
+//     color: blue;
+//     width: 46px;
+//   }
+// }
 
-@media screen and (min-width: 900px)  {
-  .arrow {
-    width: 24px;
-  }
-}
+// @media screen and (min-width: 900px)  {
+//   .arrow {
+//     width: 24px;
+//   }
+// }

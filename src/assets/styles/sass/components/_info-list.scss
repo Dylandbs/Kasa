@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0px auto 20px auto;
+  margin: 0 auto 1.25rem auto; 
   width: 100%;
 }
 
@@ -13,7 +13,7 @@
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  padding: 10px;
+  padding: 0.625rem; 
   height: 30px;
   border-radius: 5px;
   color: white;
@@ -22,7 +22,7 @@
 
   h3 {
     font-weight: 700;
-    font-size: 13px;
+    font-size: 0.8125rem; 
     margin: 0;
   }
 
@@ -40,34 +40,34 @@
 .info__text {
   background: rgba(246, 246, 246, 0.45);
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75rem; 
   line-height: 1.43;
   border-radius: 0 0 5px 5px;
   overflow: hidden;
   width: 100%;
   box-sizing: border-box;
-  padding: 0 10px;
+  padding: 0 0.625rem; 
   transition: max-height 0.3s ease, padding 0.3s ease;
 
   &.visible {
     max-height: 500px;
-    padding: 10px;
+    padding: 0.625rem; 
   }
 }
 
 @media screen and (min-width: 900px) {
   .info__container {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     justify-content: flex-start;
   }
 
   .info__List {
     height: 54px;
-    padding: 0 20px;
+    padding: 0 1.25rem; 
 
     h3 {
-      font-size: 24px;
+      font-size: 1.5rem; 
     }
 
     .arrow {
@@ -77,11 +77,11 @@
   }
 
   .info__text {
-    font-size: 18px;
-    padding: 0 20px;
+    font-size: 1.125rem; 
+    padding: 0 1.25rem; 
 
     &.visible {
-      padding: 0 20px;
+      padding: 0 1.25rem 1.25rem; 
     }
   }
 }
