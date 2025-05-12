@@ -57,7 +57,9 @@
 
 @media screen and (min-width: 900px) {
   .info__container {
+    display: flex;
     margin-bottom: 30px;
+    justify-content: flex-start;
   }
 
   .info__List {

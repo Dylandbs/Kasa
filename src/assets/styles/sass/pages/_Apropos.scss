@@ -1,0 +1,13 @@
+.container__infolist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 900px) {
+  .container__infolist {
+    width: 90%;
+    margin: auto;
+  }
+}

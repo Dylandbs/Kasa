@@ -18,17 +18,25 @@ const Fichelogement = () => {
       <div className="home">
         <Header />
         <Gallerie images={logement.pictures} />
-        <div className="logement-header">
-          <h3>{logement.title}</h3>
-          <p>{logement.location}</p>
+
+        <div className="logement-section">
+          <div className="logement-info-header">
+            <div className="logement-header">
+              <h3 className="logement-name">{logement.title}</h3>
+              <p className="logement-location">{logement.location}</p>
+            </div>
+            <Tag tags={logement.tags} />
+          </div>
+
+          <div className="user-rating">
+            <User name={logement.host.name} picture={logement.host.picture} />
+            <StarRating rating={logement.rating} />
+          </div>
         </div>
-        <Tag tags={logement.tags} />
-        <div className="user-rating">
-          <User name={logement.host.name} picture={logement.host.picture} />
-          <StarRating rating={logement.rating} />
+        <div className="container-info">
+          <InfoList title="Description" contents={logement.description} />
+          <InfoList title="Équipements" contents={logement.equipments} />
         </div>
-        <InfoList title="Description" contents={logement.description} />
-        <InfoList title="Équipements" contents={logement.equipments} />
       </div>
       <Footer />
     </div>

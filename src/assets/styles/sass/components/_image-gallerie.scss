@@ -1,8 +1,8 @@
-.container__gallerie{
+.container__gallerie {
   position: relative;
   margin-top: 20px;
-  
-  img{
+
+  img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,8 +11,8 @@
     object-fit: cover;
     border-radius: 10px;
   }
-  
-  .gallerie__arrow{
+
+  .gallerie__arrow {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,13 +21,28 @@
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
-    
-    svg{
-      width: 20px; 
+
+    svg {
+      width: 20px;
       height: 20px;
       color: white;
-      padding: 3px; 
+      padding: 3px;
       cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container__gallerie {
+    img {
+      height: 415px;
+    }
+    .gallerie__arrow {
+      svg {
+        width: 80px;
+        height: 80px;
+        padding: 0;
+      }
     }
   }
 }
