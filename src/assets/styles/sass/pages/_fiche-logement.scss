@@ -1,0 +1,26 @@
+.logement-header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 500;
+  line-height: 143%;
+  margin: 15px 0px 10px 0px;
+  h3 {
+    font-size: 18px;
+    color: rgba(255, 96, 96, 1);
+    margin: 0;
+  }
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+.user-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}

@@ -7,6 +7,7 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Gallerie from "../components/gallerie/gallerie";
 import StarRating from "../components/ratingStar/ratingStar";
+import User from "../components/user";
 
 const Fichelogement = () => {
   const { id } = useParams();
@@ -17,16 +18,17 @@ const Fichelogement = () => {
       <div className="home">
         <Header />
         <Gallerie images={logement.pictures} />
-        <h3>{logement.title}</h3>
-        <p>{logement.location}</p>
-        <Tag tags={logement.tags} />
-        <div className="user">
-          <p className="user__name">{logement.host.name}</p>
-          <img src={logement.host.picture} alt={logement.host.name} />
+        <div className="logement-header">
+          <h3>{logement.title}</h3>
+          <p>{logement.location}</p>
         </div>
-        <StarRating rating={logement.rating} />
+        <Tag tags={logement.tags} />
+        <div className="user-rating">
+          <User name={logement.host.name} picture={logement.host.picture} />
+          <StarRating rating={logement.rating} />
+        </div>
         <InfoList title="Description" contents={logement.description} />
-        <InfoList title="equipments" contents={logement.equipments} />
+        <InfoList title="Équipements" contents={logement.equipments} />
       </div>
       <Footer />
     </div>
