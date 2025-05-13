@@ -1,6 +1,6 @@
 import React from "react";
 import "./assets/styles/sass/main.scss";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Apropos from "./pages/Apropos";
 import Fichelogement from "./pages/fiche-logement";
@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/A-propos" element={<Apropos />} />
         <Route path="*" element={<Error404 />} />
-        <Route  path="/logement/:id" element={<Fichelogement />}/>
+        <Route path="/logement/:id" element={<Fichelogement />} />
       </Routes>
     </Router>
   );

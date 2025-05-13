@@ -1,13 +1,16 @@
-import React from 'react';
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
+function NavButton({ path, label }) {
+  const location = useLocation()
 
-function NavButton({ nameBtn }) {
   return (
-    <button className="nav__btn--active">
-      {nameBtn}
+    <button>
+      <Link to={path} className={`nav-link ${location.pathname === path ? 'active' : ''}`}>
+      {label}
+      </Link>
     </button>
   );
 }
 
 export default NavButton;
-

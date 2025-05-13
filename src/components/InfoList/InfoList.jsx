@@ -17,11 +17,11 @@ function InfoList({ title, contents }) {
     <div className="info__container">
       <div
         className="info__List" 
-        onClick={handleClick}
       >
         <h3>{title}</h3>
         <svg
           className={`arrow ${visible ? "visible" : ""}`}
+          onClick={handleClick}
           width="24"
           height="14"
           viewBox="0 0 24 14"

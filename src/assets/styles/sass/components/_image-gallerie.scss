@@ -1,6 +1,6 @@
 .container__gallerie {
   position: relative;
-  margin-top: 1.25rem; 
+  margin-top: 1.25rem;
   img {
     display: flex;
     justify-content: center;
@@ -9,6 +9,9 @@
     height: 255px;
     object-fit: cover;
     border-radius: 10px;
+  }
+  .image-counter {
+   display: none;
   }
 
   .gallerie__arrow {
@@ -27,12 +30,26 @@
       color: white;
       padding: 0.1875rem;
       cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
     }
   }
 }
 
 @media screen and (min-width: 900px) {
   .container__gallerie {
+     .image-counter {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 500;
+    font-size: 1.125rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    margin-bottom: 1.5rem;
+    color: white;
+  }
     img {
       height: 415px;
     }

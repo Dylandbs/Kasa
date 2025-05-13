@@ -50,6 +50,9 @@ const ImageGallery = ({ images }) => {
         </svg>
       </div>
       <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} />
+      <p className="image-counter">
+        {currentIndex + 1} / {images.length}
+      </p>
     </div>
   );
 };
