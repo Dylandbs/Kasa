@@ -1,21 +1,19 @@
 // main.scss
 
-@import 'base/base';
+@import "base/base";
 
-@import 'components/logo';
-@import 'components/nav-button';
-@import 'components/arrow';
-@import 'components/info-list';
-@import 'components/logement';
-@import 'components/heroBanner';
-@import 'components/tag';
-@import 'components/user';
-@import 'components/image-gallerie';
-@import 'components/rating-star';
+@import "components/nav-button";
+@import "components/info-list";
+@import "components/logement";
+@import "components/heroBanner";
+@import "components/tag";
+@import "components/user";
+@import "components/image-gallerie";
+@import "components/rating-star";
 
-@import 'layout/header';
-@import 'layout/footer';
+@import "layout/header";
+@import "layout/footer";
 
-@import 'pages/error404'; 
-@import 'pages/fiche-logement'; 
-@import 'pages/Apropos'; 
+@import "pages/error404";
+@import "pages/fiche-logement";
+@import "pages/Apropos";

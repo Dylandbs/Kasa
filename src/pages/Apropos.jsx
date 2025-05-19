@@ -1,15 +1,15 @@
 import React from "react";
 import Header from "../components/Header/Header";
-import HeroBanner from "../components/HeroBanner/HeroBanner";
-import InfoList from "../components/InfoList/InfoList";
-import Footer from "../components/Footer/Footer";
+import HeroBanner from "../components/HeroBanner";
+import InfoList from "../components/InfoList";
+import Footer from "../components/Footer";
 import montagne from "../assets/images/montagne2.png";
 import "../assets/styles/sass/main.scss";
 
 function Apropos() {
   return (
     <div className="app">
-      <div className="home">
+      <div className="content">
         <Header />
         <HeroBanner paysage={montagne} />
         <div className="container__infolist">

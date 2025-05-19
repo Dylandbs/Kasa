@@ -61,8 +61,10 @@
 
   .container-info {
     display: flex;
-    justify-content: flex-start;
     gap: 5rem;
     font-size: 1.125rem;
+    .text-content{
+      font-size: 1.125rem;
+    }
   }
 }

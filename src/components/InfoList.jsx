@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function InfoList({ title, contents }) {
+function InfoList({ title, contents, styleName }) {
   const [visible, setVisible] = useState(false);
 
   const handleClick = () => setVisible(v => !v);
@@ -18,7 +18,7 @@ function InfoList({ title, contents }) {
       <div
         className="info__List" 
       >
-        <h3>{title}</h3>
+        <h3 className={styleName} >{title}</h3>
         <svg
           className={`arrow ${visible ? "visible" : ""}`}
           onClick={handleClick}

@@ -1,8 +1,7 @@
 import React from "react";
-import Logo from "./Logo/Logo.jsx";
-import NavButton from "./NavButton/NavButton.jsx";
+import Logo from "./Logo.jsx";
+import NavButton from "./NavButton.jsx";
 import logo from "../../assets/images/logo.png";
-
 
 function Header() {
   return (

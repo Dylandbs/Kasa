@@ -1,15 +1,15 @@
 import React from "react";
 import Header from "../components/Header/Header";
-import HeroBanner from "../components/HeroBanner/HeroBanner";
-import Logement from "../components/logements"
-import Footer from "../components/Footer/Footer";
+import HeroBanner from "../components/HeroBanner";
+import Logement from "../components/logements";
+import Footer from "../components/Footer";
 import montagne from "../assets/images/montagne1.jpg";
 import "../assets/styles/sass/main.scss";
 
 function home() {
   return (
     <div className="app">
-      <div className="home">
+      <div className="content">
         <Header />
         <div>
           <HeroBanner
@@ -19,7 +19,7 @@ function home() {
         </div>
         <Logement />
       </div>
-        <Footer />
+      <Footer />
     </div>
   );
 }
